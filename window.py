@@ -10,6 +10,7 @@ class Application(tk.Frame):
 		self.quitButton=tk.Button(self,text='Quit',command=self.quit)
 		self.quitButton.grid()
 
+
 app=Application()
 app.master.title('Sample application')
 app.mainloop()
