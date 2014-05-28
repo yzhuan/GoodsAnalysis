@@ -10,21 +10,6 @@ import threading
 import Queue
 
 
-"""
-LinkType
-    TaoBaoSearchPage=10
-    TaoBaoItemPage=11
-    
-    JdSearchPage=20
-    JdItemPage=21
-    JdPricePage=22
-    JdImagePage=23
-    JdCommentsPage=24
-    
-parse_helper={20:[]}
-"""
-
-
 class Spider():
     def __init__(self,keyword):
         self.req_queue=Queue.Queue()
