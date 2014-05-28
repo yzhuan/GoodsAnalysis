@@ -10,8 +10,8 @@ y460.html
 first match is in p-img
 second match is in p-name
 so add
-p-img[^<]*?
-p-name[^<]*?
+p-img[^<]*?<a\s.*href=["].*?item.*?[.]html["]\sonclick=[^>]*>[\s\S]*?lazyload=["](.*?)["][\s\S]*?</a>
+p-name[^<]*?<a\s.*href=["](.*?item.*?[.]html)["]\sonclick=[^>]*>\s*([\w\W]*?)</a>
 <div class="p-img">
 		<a target="_blank" href="http://item.jd.com/689355.html" onclick="searchlog(1,689355,0,2)">
 			<img width="220" height="220" data-img="1" data-lazyload="http://img10.360buyimg.com/n7/g14/M07/1F/04/rBEhV1NWB7AIAAAAAAGzz6FogNMAAMaGwKrStgAAbPn326.jpg" />
@@ -37,5 +37,11 @@ y460_comments.html
 http://club.jd.com/productpage/p-689355-s-0-t-3-p-0.html?callback=jsonp1401198047058&_=1401198054350
 http://club.jd.com/productpage/p-{skuId}-s-{commType}-t-{sortType}-p-{currPage}.html in product.js
 
+
+
+taobao
+
+item:
+<h3\sclass=["]summary["][\s\S]*?href=["](.*?id=(\d+))["][\s\S]*?title=["]([^"]*?)["][\s\S]*?price["]>.(.*)?<
 
 
